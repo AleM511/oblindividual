@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneos de Videojuegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <!-- Formulario para agregar nota -->
+            <h2>Agregar Nota</h2>
+            <form id="addNoteForm">
+                <label for="noteDetail">Detalle:</label>
+                <input type="text" id="noteDetail" required>
+                <label for="noteType">Tipo:</label>
+                <select id="noteType">
+                    <option value="positiva">Positiva</option>
+                    <option value="negativa">Negativa</option>
+                    <option value="neutral">Neutral</option>
+                </select>
+                <label for="notePlayer">Jugador:</label>
+                <input type="text" id="notePlayer" required>
+                <button type="submit">Guardar</button>
+            </form>
+        </div>
+        <div class="main-content">
+            <!-- Listado de notas -->
+            <h2>Notas</h2>
+            <div id="notesList"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
